@@ -7,7 +7,12 @@ import android.view.Window;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
+import com.admob.android.ads.AdView;
+
 public class ECodeViewActivity extends Activity {
+	
+	private AdView adView;
+	
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
@@ -34,6 +39,18 @@ public class ECodeViewActivity extends Activity {
 		layVegan.setVisibility(code.safeForVegans() ? View.VISIBLE : View.GONE);
 		layChild.setVisibility(code.safeForChildren() ? View.VISIBLE : View.GONE);
 		layAller.setVisibility(code.safeForAllergic() ? View.VISIBLE : View.GONE);
+		installAdView();
+	}
+	
+	private void installAdView() {
+		LinearLayout layout = (LinearLayout) findViewById(R.id.viewmain);			
+		adView = new AdView(this);
+		adView.setGoneWithoutAd(true);
+		if (adView != null) {
+			layout.addView(adView);					
+			adView.requestFreshAd();
+		}
+		
 	}
 
 }

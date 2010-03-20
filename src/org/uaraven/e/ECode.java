@@ -20,7 +20,7 @@ public final class ECode implements Comparable<ECode>, Parcelable {
 	public String comment;
 	public int vegan;
 	public int children;
-	public int allergic;
+	public boolean allergic;
 
 	public static final Parcelable.Creator<ECode> CREATOR = new Parcelable.Creator<ECode>() {
 		public ECode createFromParcel(Parcel in) {
@@ -33,7 +33,6 @@ public final class ECode implements Comparable<ECode>, Parcelable {
 	};
 	
 	public ECode() {
-		
 	}
 
 	private ECode(Parcel in) {
@@ -44,7 +43,7 @@ public final class ECode implements Comparable<ECode>, Parcelable {
 		comment = in.readString();
 		vegan = in.readInt();
 		children = in.readInt();
-		allergic = in.readInt();
+		allergic = in.readInt() != 0;
 	}
 
 	public boolean safeForVegans() {
@@ -56,7 +55,7 @@ public final class ECode implements Comparable<ECode>, Parcelable {
 	}
 
 	public boolean safeForAllergic() {
-		return allergic == 0;
+		return !allergic;
 	}
 
 	public boolean hasExtra() {
@@ -114,7 +113,7 @@ public final class ECode implements Comparable<ECode>, Parcelable {
 		dest.writeString(comment);
 		dest.writeInt(vegan);
 		dest.writeInt(children);
-		dest.writeInt(allergic);
+		dest.writeInt(allergic ? 1 : 0);
 	}
 
 	public int getDanger() {
