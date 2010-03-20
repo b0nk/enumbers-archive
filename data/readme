@@ -1,0 +1,27 @@
+Format of data file:
+
+1. E number
+2. Name
+3. Application
+4. Danger code:
+		0 - Safe/Permitted		(Green)
+		1 - Warning/Unpermitted	(Yellow)
+		2 - Avoid/Forbidden		(Orange)
+		3 - Dangerous			(Red)
+5. Extra text, display icon if present
+6. Vegan stuff:
+		empty - safe
+		0 - Animal sources
+		1 - Can have both animal and plan sources. Avoid if unsure
+7. Children
+		empty - safe
+		0	- cause ADHD
+		1	- Not recommended
+		3	- See extra text
+		4	- Automatically set where danger > 0
+8. Allergic
+		empty - safe
+		0	  - can cause allergic reactions
+9. Halal? 
+		empty - ok
+		0	  - avoid 

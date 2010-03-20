@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <string name="app_name">E numbers</string>
+
+<string name="doSearch">Search</string>
+<string name="searchHint">Type E number to search</string>
+<string name="permitted">Usually safe, permitted in EU</string>
+<string name="unpermitted">May cause adverse effects, not permitted in EU, additional tests may be ongoing</string>
+<string name="forbidden">Proven to cause severe adverse effects, avoid</string>
+<string name="dangerous">May be dangerous for people with chronic diseases</string>
+<string name="extra">Additional information exists, click on additive to view details</string>
+<string name="unknown">Unknown - no information on permissions</string>
+<string name="menu_help">Help</string>
+<string name="HelpCaption">This application is a reference for food additives also known as <b>E numbers</b>. For each E number following information is displayed: proper name, purpose and health status.</string>
+<string name="HelpCaption2">Below is short summary for each possible status.</string>
+<string name="vegan">Additives marked with leaf are safe for vegetarians</string>
+<string name="child">Additives marked with child are safe for children</string>
+<string name="allerg">Additives marked with hand are safe for allergics</string>
+<string name="cap_permitted">Permitted</string>
+<string name="cap_unpermitted">Unpermitted</string>
+<string name="cap_forbidden">Forbidden</string>
+<string name="cap_dangerous">Dangerous</string>
+<string name="cap_unknown">Unknown</string>
+
+<string name="note">Please, always check additional information, if exist. Some additives may be generally safe and permitted, but cause some adverse effects for minority of people, however <b>you</b> can be in this minority!</string>
+
+<string name="vegan2">This additive is safe for vegetarians</string>
+<string name="child2">This additive is safe for children</string>
+<string name="allerg2">This additive is safe for allergics</string>
+
+<string name="db">Preparing database</string>
+
+</resources>
