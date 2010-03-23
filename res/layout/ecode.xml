@@ -33,7 +33,10 @@
 			android:layout_height="wrap_content" android:textSize="14sp"
 			android:text="@+id/status" android:id="@+id/status"
 			android:textColor="#FFFFFF" android:layout_weight="2"></TextView>
-			
+
+			<ImageView android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:src="@drawable/info"
+				android:id="@+id/iIcon" android:layout_gravity="center"></ImageView>			
 			<ImageView android:layout_width="wrap_content"
 				android:layout_height="wrap_content" android:src="@drawable/v"
 				android:id="@+id/veganIcon" android:layout_gravity="center"></ImageView>
@@ -43,9 +46,7 @@
 			<ImageView android:layout_width="wrap_content"
 				android:layout_height="wrap_content" android:src="@drawable/al"
 				android:id="@+id/allergyIcon" android:layout_gravity="center"></ImageView>
-			<ImageView android:layout_width="wrap_content"
-				android:layout_height="wrap_content" android:src="@drawable/info"
-				android:id="@+id/iIcon" android:layout_gravity="center"></ImageView>
+
 
 		</LinearLayout>
 	</LinearLayout>

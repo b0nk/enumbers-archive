@@ -458,7 +458,7 @@
    <child value="0"/>
    <purpose code="2"/>
    <name>
-     <en>Riboflavin-5&apos;-Phosphate</en>
+     <en>Riboflavin-5'-Phosphate</en>
      <ru>Натриевая соль рибофлавин-5-фосфата</ru>
    </name>
    <extra>
@@ -470,10 +470,10 @@
    <danger value="1"/>
    <veg value="0"/>
    <child value="1"/>
-    <allegic/>
+   <allergic/>
    <purpose code="3"/>
    <name>
-     <en>Tartrazine (FD&amp;C Yellow 5)</en>
+     <en>Tartrazine (FD &amp; Yellow 5)</en>
      <ru>Тартразин</ru>
    </name>
    <extra>
@@ -499,7 +499,7 @@
    <danger value="2"/>
    <veg value="2"/>
    <child value="1"/>
-    <allegic/>
+   <allergic/>
    <purpose code="5"/>
    <name>
      <en>Quinoline Yellow WS</en>
@@ -584,7 +584,7 @@
    <danger value="0"/>
    <veg value="1"/>
    <child value="2"/>
-    <allegic/>
+   <allergic/>
    <purpose code="8"/>
    <name>
      <en>Cochineal, Carminic acid, Carmines, Natural Red 4</en>
@@ -613,7 +613,7 @@
    <danger value="2"/>
    <veg value="0"/>
    <child value="1"/>
-    <allegic/>
+   <allergic/>
    <purpose code="10"/>
    <name>
      <en>Carmoisine, Azorubine</en>
@@ -628,7 +628,7 @@
    <danger value="2"/>
    <veg value="0"/>
    <child value="2"/>
-    <allegic/>
+   <allergic/>
    <purpose code="9"/>
    <name>
      <en>Amaranth (FD&amp;C Red 2)</en>
@@ -643,7 +643,7 @@
    <danger value="1"/>
    <veg value="0"/>
    <child value="1"/>
-    <allegic/>
+   <allergic/>
    <purpose code="11"/>
    <name>
      <en>Ponceau 4R (Cochineal Red A, Brilliant Scarlet 4R)</en>
@@ -742,7 +742,7 @@
    <danger value="3"/>
    <veg value="0"/>
    <child value="2"/>
-    <allegic/>
+   <allergic/>
    <purpose code="13"/>
    <name>
      <en>Patent Blue V</en>
@@ -757,7 +757,7 @@
    <danger value="3"/>
    <veg value="0"/>
    <child value="2"/>
-    <allegic/>
+   <allergic/>
    <purpose code="14"/>
    <name>
      <en>Indigo carmine, FD&amp;C Blue 2</en>
@@ -814,7 +814,7 @@
    <danger value="1"/>
    <veg value="0"/>
    <child value="2"/>
-    <allegic/>
+   <allergic/>
    <purpose code="16"/>
    <name>
      <en>Green S</en>
@@ -899,7 +899,7 @@
    <danger value="1"/>
    <veg value="0"/>
    <child value="2"/>
-    <allegic/>
+   <allergic/>
    <purpose code="19"/>
    <name>
      <en>Black PN, Brilliant Black BN</en>
@@ -984,7 +984,7 @@
    <danger value="1"/>
    <veg value="0"/>
    <child value="4"/>
-    <allegic/>
+   <allergic/>
    <purpose code="21"/>
    <name>
      <en>Annatto, bixin, norbixin</en>
@@ -1307,7 +1307,7 @@
    <danger value="1"/>
    <veg value="0"/>
    <child value="4"/>
-    <allegic/>
+   <allergic/>
    <purpose code="23"/>
    <name>
      <en>Pigment Rubine, Lithol Rubine BK</en>
@@ -1420,7 +1420,7 @@
    <danger value="1"/>
    <veg value="0"/>
    <child value="1"/>
-    <allegic/>
+   <allergic/>
    <purpose code="31"/>
    <name>
      <en>Benzoic acid</en>
@@ -1533,7 +1533,7 @@
    <danger value="1"/>
    <veg value="0"/>
    <child value="2"/>
-    <allegic/>
+   <allergic/>
    <purpose code="31"/>
    <name>
      <en>Methylparaben (methyl para-hydroxybenzoate)</en>
@@ -1590,7 +1590,7 @@
    <danger value="0"/>
    <veg value="0"/>
    <child value="2"/>
-    <allegic/>
+   <allergic/>
    <purpose code="31"/>
    <name>
      <en>Sodium bisulphite (sodium hydrogen sulphite)</en>
@@ -1605,7 +1605,7 @@
    <danger value="0"/>
    <veg value="0"/>
    <child value="2"/>
-    <allegic/>
+  <allergic/>
    <purpose code="31"/>
    <name>
      <en>Sodium metabisulphite</en>
@@ -1627,7 +1627,7 @@
    </name>
    <extra>
      <en>Can cause asthma, cyanosis, faintness and even unconsciousness.</en>
-     <ru>Может вызывать астму, цианоз и даже потерб сознания.</ru>
+     <ru>Может вызывать астму, цианоз и даже потерю сознания.</ru>
    </extra>
   </enumber>
   <enumber id="225">
@@ -1662,7 +1662,7 @@
    <danger value="0"/>
    <veg value="0"/>
    <child value="2"/>
-    <allegic/>
+  <allergic/>
    <purpose code="32"/>
    <name>
      <en>Calcium hydrogen sulphite (preservative)</en>
@@ -2433,7 +2433,7 @@
    <danger value="0"/>
    <veg value="0"/>
    <child value="2"/>
-    <allegic/>
+   <allergic/>
    <purpose code="36"/>
    <name>
      <en>Butylated hydroxyanisole (BHA)</en>
@@ -2448,7 +2448,7 @@
    <danger value="0"/>
    <veg value="0"/>
    <child value="2"/>
-    <allegic/>
+   <allergic/>
    <purpose code="36"/>
    <name>
      <en>Butylated hydroxytoluene (BHT)</en>

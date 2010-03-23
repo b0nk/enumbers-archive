@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-	android:layout_width="fill_parent" android:layout_height="wrap_content"
-	android:orientation="vertical"
-	android:id="@+id/viewmain">
+	android:layout_width="fill_parent" android:layout_height="fill_parent"
+	android:orientation="vertical" android:id="@+id/viewmain">
 	<TextView android:text="@+id/TextView01" android:id="@+id/textCode"
 		android:layout_width="fill_parent" android:textColor="#000000"
 		android:textStyle="bold" android:textSize="20sp"
@@ -33,11 +32,10 @@
 		android:layout_marginTop="6sp">
 		<LinearLayout android:id="@+id/LinearLayout02"
 			android:layout_width="wrap_content" android:layout_height="wrap_content">
-			<ImageView android:id="@+id/ImageView01"
-				android:layout_width="wrap_content" android:layout_height="wrap_content"
-				android:src="@drawable/vegan"></ImageView>
+			<ImageView android:id="@+id/img_v" android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:src="@drawable/vegan"></ImageView>
 		</LinearLayout>
-		<TextView android:id="@+id/TextView01" android:layout_width="wrap_content"
+		<TextView android:id="@+id/tv_v" android:layout_width="wrap_content"
 			android:layout_height="wrap_content" android:text="@string/vegan2"></TextView>
 	</LinearLayout>
 	<LinearLayout android:layout_height="wrap_content"
@@ -46,11 +44,10 @@
 		android:layout_marginTop="6sp">
 		<LinearLayout android:id="@+id/LinearLayout02"
 			android:layout_width="wrap_content" android:layout_height="wrap_content">
-			<ImageView android:id="@+id/ImageView03"
-				android:layout_width="wrap_content" android:layout_height="wrap_content"
-				android:src="@drawable/child"></ImageView>
+			<ImageView android:id="@+id/img_ch" android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:src="@drawable/child"></ImageView>
 		</LinearLayout>
-		<TextView android:id="@+id/TextView01" android:layout_width="wrap_content"
+		<TextView android:id="@+id/tv_ch" android:layout_width="wrap_content"
 			android:layout_height="wrap_content" android:text="@string/child2"></TextView>
 	</LinearLayout>
 	<LinearLayout android:layout_height="wrap_content"
@@ -59,11 +56,14 @@
 		android:layout_marginTop="6sp">
 		<LinearLayout android:id="@+id/LinearLayout02"
 			android:layout_width="wrap_content" android:layout_height="wrap_content">
-			<ImageView android:id="@+id/ImageView03"
-				android:layout_width="wrap_content" android:layout_height="wrap_content"
-				android:src="@drawable/allergic"></ImageView>
+			<ImageView android:id="@+id/img_al" android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:src="@drawable/allergic"></ImageView>
 		</LinearLayout>
-		<TextView android:id="@+id/TextView01" android:layout_width="wrap_content"
+		<TextView android:id="@+id/tv_al" android:layout_width="wrap_content"
 			android:layout_height="wrap_content" android:text="@string/allerg2"></TextView>
+	</LinearLayout>
+	<LinearLayout android:id="@+id/ads_layout"
+		android:layout_height="fill_parent" android:orientation="vertical"
+		android:layout_width="fill_parent" android:gravity="bottom">
 	</LinearLayout>
 </LinearLayout>

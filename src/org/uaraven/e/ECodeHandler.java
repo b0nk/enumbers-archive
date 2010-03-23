@@ -25,13 +25,13 @@ public class ECodeHandler extends DefaultHandler {
 	private int currentState = -1;
 
 	private int currentPurposeId = -1;
-	private boolean ignoreString = true;
 
 	private String language;
 
 	private ECodeList list;
 	private ECode currentECode;
 	private HashMap<Integer, String> purposes;
+	private StringBuilder currentString = new StringBuilder();
 
 	public ECodeHandler(ECodeList list) {
 		this.list = list;
@@ -48,6 +48,20 @@ public class ECodeHandler extends DefaultHandler {
 			list.add(currentECode);
 			currentState = -1;
 		}
+		switch (currentState) {
+		case STATE_PURPOSE:
+			if (localName.equals(language))
+				purposes.put(currentPurposeId, currentString.toString());
+			break;
+		case STATE_NAME:
+			if (localName.equals(language))
+				currentECode.name = currentString.toString();
+			break;
+		case STATE_EXTRA:
+			if (localName.equals(language))
+				currentECode.comment = currentString.toString();
+			break;
+		}
 	}
 
 	@Override
@@ -60,37 +74,21 @@ public class ECodeHandler extends DefaultHandler {
 	public void characters(char[] ch, int start, int length)
 			throws SAXException {
 		super.characters(ch, start, length);
-		if (ignoreString)
-			return;
 		String value = new String(ch, start, length).trim();
 		if ("\n".equals(value) || "".equals(value))
 			return;
-		switch (currentState) {
-		case STATE_PURPOSE:
-			if (purposes.containsKey(currentPurposeId)) {
-				String s = purposes.get(currentPurposeId);
-				s = s + value;
-				purposes.put(currentPurposeId, s);
-			} else
-				purposes.put(currentPurposeId, value);
-			break;
-		case STATE_NAME:
-			currentECode.name = value;
-			break;
-		case STATE_EXTRA:
-			currentECode.comment = value;
-			break;
-		}
+		currentString.append(value);
 	}
 
 	@Override
 	public void startElement(String uri, String localName, String qName,
 			Attributes attributes) throws SAXException {
 		super.startElement(uri, localName, qName, attributes);
-		ignoreString = true;
+		currentString = new StringBuilder();
 		if (TAG_PURPOSE.equals(localName)) {
 			if (currentState == STATE_ENUMBER) {
-				Integer purposeId = Integer.parseInt(attributes.getValue("code"));
+				Integer purposeId = Integer.parseInt(attributes
+						.getValue("code"));
 				if (purposes.containsKey(purposeId))
 					currentECode.purpose = purposes.get(purposeId);
 				else
@@ -118,8 +116,7 @@ public class ECodeHandler extends DefaultHandler {
 			currentState = STATE_NAME;
 		} else if (TAG_EXTRA.equals(localName)) {
 			currentState = STATE_EXTRA;
-		} else {
-			ignoreString = !language.equals(localName);
 		}
 	}
+
 }

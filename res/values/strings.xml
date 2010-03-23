@@ -14,9 +14,10 @@
 <string name="menu_help">Help</string>
 <string name="HelpCaption">This application is a reference for food additives also known as <b>E numbers</b>. For each E number following information is displayed: proper name, purpose and health status.</string>
 <string name="HelpCaption2">Below is short summary for each possible status.</string>
-<string name="vegan">Additives marked with leaf are safe for vegetarians</string>
-<string name="child">Additives marked with child are safe for children</string>
-<string name="allerg">Additives marked with hand are safe for allergics</string>
+<string name="vegan">Leaf image shows whenever additive is suitable for vegetarians</string>
+<string name="child">Child image shows whenever additive is safe or dangerous for children</string>
+<string name="allerg">Hand image shows additive safety for allergics</string>
+<string name="color_hint">Color of image changes from green to red, depending on additive safety.</string>
 <string name="cap_permitted">Permitted</string>
 <string name="cap_unpermitted">Unpermitted</string>
 <string name="cap_forbidden">Forbidden</string>
@@ -25,10 +26,16 @@
 
 <string name="note">Please, always check additional information, if exist. Some additives may be generally safe and permitted, but cause some adverse effects for minority of people, however <b>you</b> can be in this minority!</string>
 
-<string name="vegan2">This additive is safe for vegetarians</string>
+<string name="vegan2">This additive is suitable for vegetarians</string>
 <string name="child2">This additive is safe for children</string>
 <string name="allerg2">This additive is safe for allergics</string>
 
-<string name="db">Preparing database</string>
+<string name="v1">This additive has animal sources.</string>
+<string name="v2">This additive can be made from either vegetable or animal sources, avoid if unsure.</string>
+
+<string name="c1">This addivite is suspected to cause ADHD.</string>
+<string name="c2">This addivite is not recommended for children.</string>
+
+<string name="a1">This addivite can provoke allergic reactions.</string>
 
 </resources>

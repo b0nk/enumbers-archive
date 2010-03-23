@@ -36,6 +36,8 @@ public class ECodeAdapter implements ListAdapter, ECodeListObserver {
 		else
 			v = convertView;
 		
+		ECode code = list.get(position);		
+		
 		TextView tvcode = (TextView) v.findViewById(R.id.ecode);
 		TextView tvname = (TextView) v.findViewById(R.id.name);
 		TextView tvpurpose = (TextView) v.findViewById(R.id.purpose);
@@ -45,16 +47,21 @@ public class ECodeAdapter implements ListAdapter, ECodeListObserver {
 		ImageView iallerg = (ImageView) v.findViewById(R.id.allergyIcon);
 		ImageView iextra = (ImageView) v.findViewById(R.id.iIcon);
 		
-		ECode code = list.get(position);
 		
 		tvcode.setBackgroundColor(code.getColor());
 		tvcode.setText("E" + code.eCode);
 		tvname.setText(code.name);
 		tvpurpose.setText(code.purpose);
 		tvstatus.setText(getCaption(code));
-		ivegan.setVisibility(code.safeForVegans() ? View.VISIBLE: View.GONE);
+
+		ivegan.setImageResource(code.vegan == 0 ? R.drawable.v : 
+			(code.vegan == 2 ? R.drawable.v_y : R.drawable.v_r));
+		ichild.setImageResource(code.children == 0 ? R.drawable.ch : R.drawable.ch_r);
+		iallerg.setImageResource(code.allergic ? R.drawable.al_r : R.drawable.al);
+		
+		/*ivegan.setVisibility(code.safeForVegans() ? View.VISIBLE: View.GONE);
 		ichild.setVisibility(code.safeForChildren() ? View.VISIBLE: View.GONE);
-		iallerg.setVisibility(code.safeForAllergic() ? View.VISIBLE: View.GONE);
+		iallerg.setVisibility(code.safeForAllergic() ? View.VISIBLE: View.GONE);*/
 		iextra.setVisibility(code.hasExtra() ? View.VISIBLE: View.GONE);		
 		
 		return v;
