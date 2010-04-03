@@ -58,9 +58,6 @@ public class ECodeViewActivity extends Activity {
 			(code.children == 1 ? R.string.c1 : R.string.c2));
 		tvAller.setText(code.allergic ? R.string.a1 : R.string.allerg2);
 
-		/*layVegan.setVisibility(code.safeForVegans() ? View.VISIBLE : View.GONE);
-		layChild.setVisibility(code.safeForChildren() ? View.VISIBLE : View.GONE);
-		layAller.setVisibility(code.safeForAllergic() ? View.VISIBLE : View.GONE);*/
 		installAdView();
 	}
 	
