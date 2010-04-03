@@ -2,7 +2,6 @@ package org.uaraven.e;
 
 import android.app.Activity;
 import android.os.Bundle;
-import android.view.Gravity;
 import android.view.View;
 import android.view.Window;
 import android.view.ViewGroup.LayoutParams;
@@ -68,12 +67,12 @@ public class ECodeViewActivity extends Activity {
 	private void installAdView() {
 		LinearLayout layout = (LinearLayout) findViewById(R.id.ads_layout);			
 		adView = new AdView(this);
-		adView.setGoneWithoutAd(true);
+		LayoutParams p = new LayoutParams(LayoutParams.FILL_PARENT, LayoutParams.WRAP_CONTENT);
+		adView.setLayoutParams(p);
 		if (adView != null) {
 			layout.addView(adView);					
 			adView.requestFreshAd();
-		}
-		
+		}		
 	}
 
 }

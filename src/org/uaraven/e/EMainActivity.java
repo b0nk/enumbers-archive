@@ -8,6 +8,7 @@ import android.text.TextWatcher;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.view.ViewGroup.LayoutParams;
 import android.widget.EditText;
 import android.widget.LinearLayout;
 import android.widget.ListView;
@@ -96,11 +97,13 @@ public class EMainActivity extends ListActivity implements TextWatcher {
 	private void installAdView() {
 		LinearLayout layout = (LinearLayout) findViewById(R.id.mainlayout);			
 		adView = new AdView(this);
-		adView.setGoneWithoutAd(true);
+		LayoutParams p = new LayoutParams(LayoutParams.FILL_PARENT, LayoutParams.WRAP_CONTENT);
+		adView.setLayoutParams(p);
 		if (adView != null) {
 			layout.addView(adView);					
 			adView.requestFreshAd();
 		}
+
 	}
 
 }
