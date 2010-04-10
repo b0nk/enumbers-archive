@@ -44,7 +44,7 @@ public class EMainActivity extends ListActivity implements TextWatcher {
 		adapter = new ECodeAdapter(this, selectedECodes);
 		this.setListAdapter(adapter);
 
-		installAdView();
+		//installAdView();
 	}
 
 	private void searchForECodes() {
@@ -94,7 +94,7 @@ public class EMainActivity extends ListActivity implements TextWatcher {
 	public void onTextChanged(CharSequence s, int start, int before, int count) {
 	}
 
-	private void installAdView() {
+	/*private void installAdView() {
 		LinearLayout layout = (LinearLayout) findViewById(R.id.mainlayout);			
 		adView = new AdView(this);
 		LayoutParams p = new LayoutParams(LayoutParams.FILL_PARENT, LayoutParams.WRAP_CONTENT);
@@ -104,6 +104,6 @@ public class EMainActivity extends ListActivity implements TextWatcher {
 			adView.requestFreshAd();
 		}
 
-	}
+	}*/
 
 }
