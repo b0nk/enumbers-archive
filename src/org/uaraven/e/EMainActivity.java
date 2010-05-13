@@ -8,12 +8,8 @@ import android.text.TextWatcher;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
-import android.view.ViewGroup.LayoutParams;
 import android.widget.EditText;
-import android.widget.LinearLayout;
 import android.widget.ListView;
-
-import com.admob.android.ads.AdView;
 
 public class EMainActivity extends ListActivity implements TextWatcher {
 	private static final int MENU_HELP = 1;
@@ -23,7 +19,7 @@ public class EMainActivity extends ListActivity implements TextWatcher {
 	private ECodeList selectedECodes;
 	private ECodeAdapter adapter;
 
-	private AdView adView;
+	//private AdView adView;
 
 	/** Called when the activity is first created. */
 	@Override

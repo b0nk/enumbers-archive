@@ -4,16 +4,13 @@ import android.app.Activity;
 import android.os.Bundle;
 import android.view.View;
 import android.view.Window;
-import android.view.ViewGroup.LayoutParams;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
-import com.admob.android.ads.AdView;
-
 public class ECodeViewActivity extends Activity {
 	
-	private AdView adView;
+	//private AdView adView;
 	
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
@@ -58,9 +55,9 @@ public class ECodeViewActivity extends Activity {
 			(code.children == 1 ? R.string.c1 : R.string.c2));
 		tvAller.setText(code.allergic ? R.string.a1 : R.string.allerg2);
 
-		installAdView();
+		//installAdView();
 	}
-	
+	/*
 	private void installAdView() {
 		LinearLayout layout = (LinearLayout) findViewById(R.id.ads_layout);			
 		adView = new AdView(this);
@@ -70,6 +67,6 @@ public class ECodeViewActivity extends Activity {
 			layout.addView(adView);					
 			adView.requestFreshAd();
 		}		
-	}
+	}*/
 
 }
