@@ -482,7 +482,7 @@
    </extra>
   </enumber>
   <enumber id="103">
-   <danger value="2"/>
+   <danger value="3"/>
    <veg value="0"/>
    <child value="2"/>
    <purpose code="4"/>
@@ -496,7 +496,7 @@
    </extra>
   </enumber>
   <enumber id="104">
-   <danger value="2"/>
+   <danger value="3"/>
    <veg value="2"/>
    <child value="1"/>
    <allergic/>
@@ -539,21 +539,22 @@
    </extra>
   </enumber>
   <enumber id="107">
-   <danger value="0"/>
+   <danger value="1"/>
    <veg value="0"/>
-   <child value="0"/>
+   <child value="1"/>
+   <allergic/>
    <purpose code="6"/>
    <name>
      <en>Yellow 2G</en>
      <ru>Желтый 2G</ru>
    </name>
    <extra>
-     <en></en>
-     <ru>С 1.08.2008 не входит в список разрешенных в России</ru>
+     <en>Only the UK in the European Union uses this dye and the EU is proposing a total ban. Its use is banned in Austria, Japan, Norway, Sweden, Switzerland  and the United States.</en>
+     <ru>С 1.08.2008 не входит в список разрешенных в России. В Европе разрешено только в Великобритании</ru>
    </extra>
   </enumber>
   <enumber id="110">
-   <danger value="2"/>
+   <danger value="3"/>
    <veg value="0"/>
    <child value="1"/>
    <purpose code="1"/>
@@ -596,7 +597,7 @@
    </extra>
   </enumber>
   <enumber id="121">
-   <danger value="2"/>
+   <danger value="3"/>
    <veg value="0"/>
    <child value="2"/>
    <purpose code="9"/>
@@ -610,7 +611,7 @@
    </extra>
   </enumber>
   <enumber id="122">
-   <danger value="2"/>
+   <danger value="3"/>
    <veg value="0"/>
    <child value="1"/>
    <allergic/>
@@ -625,7 +626,7 @@
    </extra>
   </enumber>
   <enumber id="123">
-   <danger value="2"/>
+   <danger value="3"/>
    <veg value="0"/>
    <child value="2"/>
    <allergic/>
@@ -697,7 +698,7 @@
    </extra>
   </enumber>
   <enumber id="128">
-   <danger value="2"/>
+   <danger value="3"/>
    <veg value="0"/>
    <child value="1"/>
    <purpose code="11"/>
@@ -711,7 +712,7 @@
    </extra>
   </enumber>
   <enumber id="129">
-   <danger value="2"/>
+   <danger value="3"/>
    <veg value="0"/>
    <child value="1"/>
    <purpose code="11"/>
@@ -925,7 +926,7 @@
    </extra>
   </enumber>
   <enumber id="153">
-   <danger value="0"/>
+   <danger value="1"/>
    <veg value="2"/>
    <child value="2"/>
    <purpose code="19"/>
@@ -934,22 +935,23 @@
      <ru>Каменный, древесный уголь</ru>
    </name>
    <extra>
-     <en></en>
-     <ru></ru>
+     <en>Banned in USA. Only the vegetable derived variety permitted in Australia.</en>
+     <ru>Запрещено в США</ru>
    </extra>
   </enumber>
   <enumber id="154">
    <danger value="1"/>
-   <veg value="0"/>
+   <veg value="1"/>
    <child value="2"/>
+   <allergic/>
    <purpose code="18"/>
    <name>
      <en>Brown FK, Kipper Brown</en>
      <ru>Коричневый FK</ru>
    </name>
    <extra>
-     <en></en>
-     <ru></ru>
+     <en>Banned throughout the EU (except in the UK where its use is still permmitted!) Also prohibited in Australia, Austria, Canada, Finland, Ireland, Japan, Norway, Sweden and the United States.</en>
+     <ru>Запрещено в ЕС, Австралии, Канаде, США.</ru>
    </extra>
   </enumber>
   <enumber id="155">
@@ -1262,9 +1264,9 @@
    </extra>
   </enumber>
   <enumber id="173">
-   <danger value="0"/>
+   <danger value="1"/>
    <veg value="0"/>
-   <child value="0"/>
+   <child value="1"/>
    <purpose code="28"/>
    <name>
      <en>Aluminium</en>
@@ -1356,8 +1358,8 @@
      <ru>Сорбиновая кислота</ru>
    </name>
    <extra>
-     <en></en>
-     <ru></ru>
+     <en>A possible skin irritant. Not approved for use in Australia.</en>
+     <ru>Может вызывать раздражение кожи.</ru>
    </extra>
   </enumber>
   <enumber id="201">
@@ -1432,10 +1434,11 @@
    </extra>
   </enumber>
   <enumber id="211">
-   <danger value="0"/>
+   <danger value="2"/>
    <veg value="0"/>
    <child value="2"/>
    <purpose code="31"/>
+   <allergic/>
    <name>
      <en>Sodium benzoate</en>
      <ru>Бензоат натрия</ru>
@@ -1446,9 +1449,10 @@
    </extra>
   </enumber>
   <enumber id="212">
-   <danger value="0"/>
+   <danger value="2"/>
    <veg value="0"/>
    <child value="2"/>
+   <allergic/>
    <purpose code="31"/>
    <name>
      <en>Potassium benzoate</en>
@@ -1460,9 +1464,10 @@
    </extra>
   </enumber>
   <enumber id="213">
-   <danger value="0"/>
+   <danger value="2"/>
    <veg value="0"/>
    <child value="0"/>
+   <allergic/>
    <purpose code="31"/>
    <name>
      <en>Calcium benzoate</en>
@@ -1483,8 +1488,8 @@
      <ru>Этилпарабен (пара-гидроксибензойной кислоты этиловый эфир)</ru>
    </name>
    <extra>
-     <en></en>
-     <ru></ru>
+     <en>Not permitted for use in France and Australia.</en>
+     <ru>Не разрешено во Франции и Австралии</ru>
    </extra>
   </enumber>
   <enumber id="215">
@@ -1497,12 +1502,12 @@
      <ru>Пара-гидроксибензойной кислоты этилового эфира натриевая соль</ru>
    </name>
    <extra>
-     <en></en>
-     <ru></ru>
+     <en>No side effects in the concentrations used. In some people may liberate histamine and thus cause pseudo-allergic reactions. The presence of E215 in cosmetics may elicit contact allergies, which are not common with food applications.</en>
+     <ru>Не вызывает побочных эффектов в используемых концетрациях.</ru>
    </extra>
   </enumber>
   <enumber id="216">
-   <danger value="2"/>
+   <danger value="3"/>
    <veg value="0"/>
    <child value="2"/>
    <purpose code="31"/>
@@ -1516,7 +1521,7 @@
    </extra>
   </enumber>
   <enumber id="217">
-   <danger value="2"/>
+   <danger value="3"/>
    <veg value="0"/>
    <child value="2"/>
    <purpose code="31"/>
@@ -1547,7 +1552,7 @@
   <enumber id="219">
    <danger value="0"/>
    <veg value="0"/>
-   <child value="0"/>
+   <child value="1"/>
    <purpose code="31"/>
    <name>
      <en>Sodium methyl para-hydroxybenzoate</en>
@@ -1559,7 +1564,7 @@
    </extra>
   </enumber>
   <enumber id="220">
-   <danger value="0"/>
+   <danger value="2"/>
    <veg value="0"/>
    <child value="2"/>
    <purpose code="31"/>
@@ -1568,12 +1573,12 @@
      <ru>Диоксид серы</ru>
    </name>
    <extra>
-     <en>Known to provoke asthma attacks and is difficult to metabolise for those with impaired kidney function.</en>
+     <en>May provoke asthma attacks and is difficult to metabolise for those with impaired kidney function.</en>
      <ru>Может вызывать приступы астмы. Так же не рекомендуется людям с проблемными почками.</ru>
    </extra>
   </enumber>
   <enumber id="221">
-   <danger value="0"/>
+   <danger value="2"/>
    <veg value="0"/>
    <child value="2"/>
    <purpose code="31"/>
@@ -1602,7 +1607,7 @@
    </extra>
   </enumber>
   <enumber id="223">
-   <danger value="0"/>
+   <danger value="1"/>
    <veg value="0"/>
    <child value="2"/>
   <allergic/>
@@ -1617,7 +1622,7 @@
    </extra>
   </enumber>
   <enumber id="224">
-   <danger value="0"/>
+   <danger value="1"/>
    <veg value="0"/>
    <child value="2"/>
    <purpose code="31"/>
@@ -1645,7 +1650,7 @@
    </extra>
   </enumber>
   <enumber id="226">
-   <danger value="0"/>
+   <danger value="1"/>
    <veg value="0"/>
    <child value="2"/>
    <purpose code="31"/>
@@ -1659,10 +1664,10 @@
    </extra>
   </enumber>
   <enumber id="227">
-   <danger value="0"/>
+   <danger value="2"/>
    <veg value="0"/>
    <child value="2"/>
-  <allergic/>
+   <allergic/>
    <purpose code="32"/>
    <name>
      <en>Calcium hydrogen sulphite (preservative)</en>
@@ -1711,22 +1716,22 @@
      <ru>Ортофенилфенол</ru>
    </name>
    <extra>
-     <en></en>
-     <ru></ru>
+     <en>Banned in Australia</en>
+     <ru>Запрещено в Австралии</ru>
    </extra>
   </enumber>
   <enumber id="232">
    <danger value="1"/>
    <veg value="0"/>
-   <child value="4"/>
+   <child value="0"/>
    <purpose code="31"/>
    <name>
      <en>Sodium orthophenyl phenol</en>
      <ru>Ортофенилфенола натриевая соль</ru>
    </name>
    <extra>
-     <en></en>
-     <ru></ru>
+     <en>Banned in Australia</en>
+     <ru>Запрещено в Австралии</ru>
    </extra>
   </enumber>
   <enumber id="233">
@@ -1828,7 +1833,7 @@
    </extra>
   </enumber>
   <enumber id="240">
-   <danger value="2"/>
+   <danger value="3"/>
    <veg value="0"/>
    <child value="2"/>
    <purpose code="31"/>
@@ -1856,7 +1861,7 @@
    </extra>
   </enumber>
   <enumber id="249">
-   <danger value="2"/>
+   <danger value="3"/>
    <veg value="0"/>
    <child value="2"/>
    <purpose code="31"/>
@@ -1926,7 +1931,7 @@
    </extra>
   </enumber>
   <enumber id="261">
-   <danger value="0"/>
+   <danger value="2"/>
    <veg value="0"/>
    <child value="0"/>
    <purpose code="34"/>
@@ -2418,7 +2423,7 @@
   <enumber id="319">
    <danger value="0"/>
    <veg value="0"/>
-   <child value="0"/>
+   <child value="1"/>
    <purpose code="36"/>
    <name>
      <en>Tert-Butylhydroquinone (TBHQ)</en>
@@ -2430,7 +2435,7 @@
    </extra>
   </enumber>
   <enumber id="320">
-   <danger value="0"/>
+   <danger value="2"/>
    <veg value="0"/>
    <child value="2"/>
    <allergic/>
@@ -2445,7 +2450,7 @@
    </extra>
   </enumber>
   <enumber id="321">
-   <danger value="0"/>
+   <danger value="2"/>
    <veg value="0"/>
    <child value="2"/>
    <allergic/>
@@ -2502,8 +2507,8 @@
    </extra>
   </enumber>
   <enumber id="325">
-   <danger value="0"/>
-   <veg value="0"/>
+   <danger value="2"/>
+   <veg value="2"/>
    <child value="0"/>
    <purpose code="33"/>
    <name>
@@ -2516,7 +2521,7 @@
    </extra>
   </enumber>
   <enumber id="326">
-   <danger value="0"/>
+   <danger value="2"/>
    <veg value="2"/>
    <child value="0"/>
    <purpose code="38"/>
@@ -2525,8 +2530,8 @@
      <ru>Лактат калия</ru>
    </name>
    <extra>
-     <en></en>
-     <ru></ru>
+     <en>Young children with lactose intolerance may show adverse reactions.</en>
+     <ru>Может вызывать неблагоприятные реакции у детей с непереносимостью лактозы</ru>
    </extra>
   </enumber>
   <enumber id="327">
@@ -2539,12 +2544,12 @@
      <ru>Лактат кальция</ru>
    </name>
    <extra>
-     <en></en>
-     <ru></ru>
+     <en>Young children with lactose intolerance may show adverse reactions.</en>
+     <ru>Может вызывать неблагоприятные реакции у детей с непереносимостью лактозы</ru>
    </extra>
   </enumber>
   <enumber id="328">
-   <danger value="0"/>
+   <danger value="2"/>
    <veg value="0"/>
    <child value="0"/>
    <purpose code="33"/>
@@ -2553,13 +2558,13 @@
      <ru>Лактат аммония</ru>
    </name>
    <extra>
-     <en></en>
-     <ru></ru>
+     <en>Young children with lactose intolerance may show adverse reactions.</en>
+     <ru>Может вызывать неблагоприятные реакции у детей с непереносимостью лактозы</ru>
    </extra>
   </enumber>
   <enumber id="329">
-   <danger value="0"/>
-   <veg value="0"/>
+   <danger value="2"/>
+   <veg value="1"/>
    <child value="0"/>
    <purpose code="33"/>
    <name>
@@ -2567,8 +2572,8 @@
      <ru>Лактат магния</ru>
    </name>
    <extra>
-     <en></en>
-     <ru></ru>
+     <en>Young children with lactose intolerance may show adverse reactions.</en>
+     <ru>Может вызывать неблагоприятные реакции у детей с непереносимостью лактозы</ru>
    </extra>
   </enumber>
   <enumber id="330">
@@ -2936,7 +2941,7 @@
    </extra>
   </enumber>
   <enumber id="363">
-   <danger value="0"/>
+   <danger value="2"/>
    <veg value="0"/>
    <child value="0"/>
    <purpose code="33"/>
@@ -2945,8 +2950,8 @@
      <ru>Янтарная кислота</ru>
    </name>
    <extra>
-     <en></en>
-     <ru></ru>
+     <en>Banned in some countries</en>
+     <ru>Запрещено в некоторых странах</ru>
    </extra>
   </enumber>
   <enumber id="365">
@@ -3006,7 +3011,7 @@
    </extra>
   </enumber>
   <enumber id="370">
-   <danger value="0"/>
+   <danger value="1"/>
    <veg value="0"/>
    <child value="0"/>
    <purpose code="33"/>
@@ -3015,7 +3020,7 @@
      <ru>Гептонолактон</ru>
    </name>
    <extra>
-     <en></en>
+     <en>Banned in some countries</en>
      <ru>Не входит в список разрешенных в России</ru>
    </extra>
   </enumber>
@@ -3090,7 +3095,7 @@
    </extra>
   </enumber>
   <enumber id="385">
-   <danger value="0"/>
+   <danger value="2"/>
    <veg value="0"/>
    <child value="0"/>
    <purpose code="47"/>
@@ -3099,8 +3104,8 @@
      <ru>Кальция динатриевая соль этилендиаминтетрауксусной кислоты (CaNa2 ЭДТА)</ru>
    </name>
    <extra>
-     <en></en>
-     <ru></ru>
+     <en>Banned in some countries</en>
+     <ru>Запрещено в некоторых странах</ru>
    </extra>
   </enumber>
   <enumber id="386">
@@ -3622,7 +3627,7 @@
    </extra>
   </enumber>
   <enumber id="432">
-   <danger value="0"/>
+   <danger value="1"/>
    <veg value="2"/>
    <child value="0"/>
    <purpose code="37"/>
@@ -3631,8 +3636,8 @@
      <ru>Полиоксиэтилен (20) сорбитан монолаурат, твин 20</ru>
    </name>
    <extra>
-     <en></en>
-     <ru></ru>
+     <en>On the list of known and suspected Teratogens.</en>
+     <ru>В списке веществ, которые могут вызывать Тератогенез.</ru>
    </extra>
   </enumber>
   <enumber id="433">
@@ -4280,7 +4285,7 @@
    </extra>
   </enumber>
   <enumber id="483">
-   <danger value="0"/>
+   <danger value="1"/>
    <veg value="2"/>
    <child value="0"/>
    <purpose code="37"/>
@@ -4289,8 +4294,8 @@
      <ru>Стеарилтартрат</ru>
    </name>
    <extra>
-     <en></en>
-     <ru></ru>
+     <en>There are fears that it may be a carcinogen, and it is prohibited in Australia.</en>
+     <ru>Есть подозрения, что может являться канцерогеном. Запрещено в Австралии.</ru>
    </extra>
   </enumber>
   <enumber id="484">
@@ -4630,7 +4635,7 @@
    </extra>
   </enumber>
   <enumber id="510">
-   <danger value="0"/>
+   <danger value="2"/>
    <veg value="0"/>
    <child value="0"/>
    <purpose code="60"/>
@@ -4639,8 +4644,8 @@
      <ru>Хлорид аммония</ru>
    </name>
    <extra>
-     <en></en>
-     <ru></ru>
+     <en>Should be avoided by people with impaired liver or kidney function</en>
+     <ru>Рекомендуется избегать людям с проблемами печени и почек.</ru>
    </extra>
   </enumber>
   <enumber id="511">
@@ -4672,17 +4677,17 @@
    </extra>
   </enumber>
   <enumber id="513">
-   <danger value="0"/>
+   <danger value="1"/>
    <veg value="0"/>
-   <child value="0"/>
+   <child value="1"/>
    <purpose code="42"/>
    <name>
      <en>Sulphuric acid</en>
      <ru>Серная кислота</ru>
    </name>
    <extra>
-     <en></en>
-     <ru></ru>
+     <en>Suspected to have teratogenic properties</en>
+     <ru>Возможно имеет тератогенные свойства</ru>
    </extra>
   </enumber>
   <enumber id="514">

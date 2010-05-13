@@ -5,12 +5,12 @@
 
 <string name="doSearch">Search</string>
 <string name="searchHint">Type E number to search</string>
-<string name="permitted">Usually safe, permitted in EU</string>
-<string name="unpermitted">May cause adverse effects, not permitted in EU, additional tests may be ongoing</string>
-<string name="forbidden">Proven to cause severe adverse effects, avoid</string>
-<string name="dangerous">May be dangerous for people with chronic diseases</string>
-<string name="extra">Additional information exists, click on additive to view details</string>
-<string name="unknown">Unknown - no information on permissions</string>
+<string name="permitted">Usually safe, no known side effects.</string>
+<string name="unpermitted">May cause adverse effects, not permitted in EU, additional tests may be ongoing. Avoid it.</string>
+<string name="dangerous">Proven to cause severe adverse effects, may be dangerouse to people with chronic deceases.</string>
+<string name="mostly_safe">Mostly safe, but can cause side effects in some people, check additional info.</string>
+<string name="extra">Additional information exists, click on additive to view details.</string>
+<string name="unknown">Unknown - no information on permissions.</string>
 <string name="menu_help">Help</string>
 <string name="HelpCaption">This application is a reference for food additives also known as <b>E numbers</b>. For each E number following information is displayed: proper name, purpose and health status.</string>
 <string name="HelpCaption2">Below is short summary for each possible status.</string>
@@ -18,9 +18,9 @@
 <string name="child">Child image shows whenever additive is safe or dangerous for children</string>
 <string name="allerg">Hand image shows additive safety for allergics</string>
 <string name="color_hint">Color of image changes from green to red, depending on additive safety.</string>
-<string name="cap_permitted">Permitted</string>
-<string name="cap_unpermitted">Unpermitted</string>
-<string name="cap_forbidden">Forbidden</string>
+<string name="cap_permitted">Safe</string>
+<string name="cap_unpermitted">Avoid</string>
+<string name="cap_forbidden">Mostly safe</string>
 <string name="cap_dangerous">Dangerous</string>
 <string name="cap_unknown">Unknown</string>
 

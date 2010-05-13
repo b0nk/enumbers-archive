@@ -73,7 +73,7 @@ public class ECodeAdapter implements ListAdapter, ECodeListObserver {
 			return context.getString(R.string.cap_permitted);
 		case ECode.UNPERMITTED:
 			return context.getString(R.string.cap_unpermitted);
-		case ECode.FORBIDDEN:
+		case ECode.MOSTLY_SAFE:
 			return context.getString(R.string.cap_forbidden);
 		case ECode.DANGEROUS:
 			return context.getString(R.string.cap_dangerous);
