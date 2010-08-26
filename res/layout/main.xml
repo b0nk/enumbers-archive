@@ -1,4 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
+
+<!--
+ This file is distributed under GPL v3 license 
+ http://www.gnu.org/licenses/gpl-3.0.html      
+
+ raven@acute-angle.net                         
+-->
+
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
 	android:id="@+id/mainlayout"
 	android:orientation="vertical" android:layout_width="fill_parent"
