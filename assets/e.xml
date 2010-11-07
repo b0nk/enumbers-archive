@@ -582,7 +582,7 @@
    </extra>
   </enumber>
   <enumber id="120">
-   <danger value="0"/>
+   <danger value="2"/>
    <veg value="1"/>
    <child value="2"/>
    <allergic/>
@@ -1550,7 +1550,7 @@
    </extra>
   </enumber>
   <enumber id="219">
-   <danger value="0"/>
+   <danger value="2"/>
    <veg value="0"/>
    <child value="1"/>
    <purpose code="31"/>
@@ -1592,7 +1592,7 @@
    </extra>
   </enumber>
   <enumber id="222">
-   <danger value="0"/>
+   <danger value="2"/>
    <veg value="0"/>
    <child value="2"/>
    <allergic/>
@@ -2132,7 +2132,7 @@
    <child value="2"/>
    <purpose code="33"/>
    <name>
-     <en>Malic acid (acid)</en>
+     <en>Malic acid</en>
      <ru>Яблочная кислота (малоновая кислота)</ru>
    </name>
    <extra>
@@ -2295,7 +2295,7 @@
    </extra>
   </enumber>
   <enumber id="310">
-   <danger value="0"/>
+   <danger value="2"/>
    <veg value="0"/>
    <child value="2"/>
    <purpose code="36"/>
@@ -2421,7 +2421,7 @@
    </extra>
   </enumber>
   <enumber id="319">
-   <danger value="0"/>
+   <danger value="2"/>
    <veg value="0"/>
    <child value="1"/>
    <purpose code="36"/>
@@ -3403,7 +3403,7 @@
    </extra>
   </enumber>
   <enumber id="413">
-   <danger value="0"/>
+   <danger value="1"/>
    <veg value="0"/>
    <child value="1"/>
    <purpose code="37"/>
@@ -3417,7 +3417,7 @@
    </extra>
   </enumber>
   <enumber id="414">
-   <danger value="0"/>
+   <danger value="2"/>
    <veg value="0"/>
    <child value="1"/>
    <purpose code="37"/>
@@ -3907,7 +3907,7 @@
    </extra>
   </enumber>
   <enumber id="464">
-   <danger value="0"/>
+   <danger value="2"/>
    <veg value="0"/>
    <child value="1"/>
    <purpose code="37"/>

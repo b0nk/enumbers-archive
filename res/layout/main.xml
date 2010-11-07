@@ -16,7 +16,7 @@
 		<EditText android:id="@+id/searchString"
 			android:layout_width="fill_parent" android:layout_height="wrap_content"
 			android:hint="@string/searchHint" android:layout_weight="1"
-			android:maxLines="1" android:inputType="phone"></EditText>
+			android:maxLines="1"></EditText>
 
 	</LinearLayout>
 	<ListView android:id="@id/android:list" android:layout_width="fill_parent"

@@ -8,6 +8,9 @@
 
 package org.uaraven.e;
 
+import java.util.LinkedList;
+import java.util.List;
+
 import android.app.ListActivity;
 import android.content.Intent;
 import android.os.Bundle;
@@ -51,9 +54,26 @@ public class EMainActivity extends ListActivity implements TextWatcher {
 		//installAdView();
 	}
 
+	private String[] createCodeList(String searchString) {
+		List<String> result = new LinkedList<String>();
+		String[] tokens = searchString.split(" ");
+		for (String token: tokens) {
+			try {
+				Integer.parseInt(token);
+				result.add(token);
+			} catch (NumberFormatException e) {
+				// not integer
+				result.addAll(allECodes.textSearch(token));
+			}
+		}
+		String[] resarray = new String[result.size()];
+		return result.toArray(resarray);
+	}
+	
 	private void searchForECodes() {
 		String text = searchText.getText().toString().trim();
-		String[] codes = text.split(" ");
+		//String[] codes = text.split(" ");
+		String[] codes = createCodeList(text);
 
 		allECodes.filter(codes, selectedECodes);
 	}
@@ -84,17 +104,14 @@ public class EMainActivity extends ListActivity implements TextWatcher {
 		startActivity(intent);
 	}
 
-	@Override
 	public void afterTextChanged(Editable s) {
 		searchForECodes();
 	}
 
-	@Override
 	public void beforeTextChanged(CharSequence s, int start, int count,
 			int after) {
 	}
 
-	@Override
 	public void onTextChanged(CharSequence s, int start, int before, int count) {
 	}
 

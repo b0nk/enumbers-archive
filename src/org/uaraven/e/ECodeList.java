@@ -9,6 +9,8 @@ package org.uaraven.e;
 
 import java.io.InputStream;
 import java.util.ArrayList;
+import java.util.LinkedList;
+import java.util.List;
 
 import javax.xml.parsers.SAXParser;
 import javax.xml.parsers.SAXParserFactory;
@@ -66,6 +68,18 @@ public class ECodeList extends ArrayList<ECode> {
 				}
 		}
 		selectedECodes.onChanged();
+	}
+	
+	public List<String> textSearch(String text) {
+		List<String> result = new LinkedList<String>();
+		for (ECode code: this) {
+			/*int d = LevenshteinDistance.possibleMatch(text.toLowerCase(), code.name.toLowerCase());
+			if (d <= 2) 
+				result.add(code.eCode);*/
+			if (code.name.toLowerCase().indexOf(text.toLowerCase()) >= 0)
+				result.add(code.eCode);
+		}
+		return result;
 	}
 
 	public void setObserver(ECodeListObserver observer) {
