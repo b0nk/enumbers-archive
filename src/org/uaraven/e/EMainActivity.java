@@ -14,6 +14,8 @@ import java.util.List;
 import android.app.ListActivity;
 import android.content.Intent;
 import android.os.Bundle;
+import android.os.Handler;
+import android.os.Message;
 import android.text.Editable;
 import android.text.TextWatcher;
 import android.view.Menu;
@@ -29,6 +31,8 @@ public class EMainActivity extends ListActivity implements TextWatcher {
 	private ECodeList allECodes;
 	private ECodeList selectedECodes;
 	private ECodeAdapter adapter;
+	
+	private Handler textChangeHandler;
 
 	//private AdView adView;
 
@@ -50,6 +54,14 @@ public class EMainActivity extends ListActivity implements TextWatcher {
 
 		adapter = new ECodeAdapter(this, selectedECodes);
 		this.setListAdapter(adapter);
+		
+		textChangeHandler = new Handler(new Handler.Callback() {
+			@Override
+			public boolean handleMessage(Message msg) {
+				searchForECodes();
+				return true;
+			}
+		});
 
 		//installAdView();
 	}
@@ -105,7 +117,9 @@ public class EMainActivity extends ListActivity implements TextWatcher {
 	}
 
 	public void afterTextChanged(Editable s) {
-		searchForECodes();
+		textChangeHandler.removeMessages(0);
+		textChangeHandler.sendEmptyMessageDelayed(0, 200);
+		//searchForECodes();
 	}
 
 	public void beforeTextChanged(CharSequence s, int start, int count,
