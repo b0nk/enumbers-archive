@@ -76,8 +76,9 @@ public class ECodeList extends ArrayList<ECode> {
 			/*int d = LevenshteinDistance.possibleMatch(text.toLowerCase(), code.name.toLowerCase());
 			if (d <= 2) 
 				result.add(code.eCode);*/
-			if (code.name.toLowerCase().indexOf(text.toLowerCase()) >= 0)
-				result.add(code.eCode);
+			if (text != null && code != null && code.name != null)
+				if (code.name.toLowerCase().indexOf(text.toLowerCase()) >= 0)
+					result.add(code.eCode);
 		}
 		return result;
 	}
