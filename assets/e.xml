@@ -2466,7 +2466,7 @@
   </enumber>
   <enumber id="322">
    <danger value="0"/>
-   <veg value="2"/>
+   <veg value="0"/>
    <child value="0"/>
    <purpose code="37"/>
    <name>
@@ -3608,8 +3608,8 @@
      <ru>Полиоксиэтилен (8) стеарат</ru>
    </name>
    <extra>
-     <en></en>
-     <ru></ru>
+     <en>Although usually obtained from plant sources, usage of animal sources cannot be fully excluded.</en>
+     <ru>Хотя обычно изготавливается из раститений, нельзя полностью исключить использование животных жиров.</ru>
    </extra>
   </enumber>
   <enumber id="431">
@@ -3622,8 +3622,8 @@
      <ru>Полиоксиэтилен (40) стеарат</ru>
    </name>
    <extra>
-     <en></en>
-     <ru></ru>
+     <en>Although usually obtained from plant sources, usage of animal sources cannot be fully excluded.</en>
+     <ru>Хотя обычно изготавливается из раститений, нельзя полностью исключить использование животных жиров.</ru>
    </extra>
   </enumber>
   <enumber id="432">
@@ -3636,8 +3636,8 @@
      <ru>Полиоксиэтилен (20) сорбитан монолаурат, твин 20</ru>
    </name>
    <extra>
-     <en>On the list of known and suspected Teratogens.</en>
-     <ru>В списке веществ, которые могут вызывать Тератогенез.</ru>
+     <en>On the list of known and suspected Teratogens. Although usually obtained from plant sources, usage of animal sources cannot be fully excluded.</en>
+     <ru>В списке веществ, которые могут вызывать Тератогенез. Хотя обычно изготавливается из раститений, нельзя полностью исключить использование животных жиров.</ru>
    </extra>
   </enumber>
   <enumber id="433">
@@ -3650,8 +3650,8 @@
      <ru>Полиоксиэтилен (20) сорбитан моноолеат, твин 80</ru>
    </name>
    <extra>
-     <en></en>
-     <ru></ru>
+     <en>Although usually obtained from plant sources, usage of animal sources cannot be fully excluded.</en>
+     <ru>Хотя обычно изготавливается из раститений, нельзя полностью исключить использование животных жиров.</ru>
    </extra>
   </enumber>
   <enumber id="434">
@@ -3664,8 +3664,8 @@
      <ru>Полиоксиэтилен (20) сорбитан монопальмитат, твин 40</ru>
    </name>
    <extra>
-     <en></en>
-     <ru></ru>
+     <en>Although usually obtained from plant sources, usage of animal sources cannot be fully excluded.</en>
+     <ru>Хотя обычно изготавливается из раститений, нельзя полностью исключить использование животных жиров.</ru>
    </extra>
   </enumber>
   <enumber id="435">
@@ -3678,8 +3678,8 @@
      <ru>Полиоксиэтилен (20) сорбитан моностеарат, твин 60</ru>
    </name>
    <extra>
-     <en></en>
-     <ru></ru>
+     <en>Although usually obtained from plant sources, usage of animal sources cannot be fully excluded.</en>
+     <ru>Хотя обычно изготавливается из раститений, нельзя полностью исключить использование животных жиров.</ru>
    </extra>
   </enumber>
   <enumber id="436">
@@ -3692,8 +3692,8 @@
      <ru>Полиоксиэтилен (20) сорбитан тристеарат</ru>
    </name>
    <extra>
-     <en></en>
-     <ru></ru>
+     <en>Although usually obtained from plant sources, usage of animal sources cannot be fully excluded.</en>
+     <ru>Хотя обычно изготавливается из раститений, нельзя полностью исключить использование животных жиров.</ru>
    </extra>
   </enumber>
   <enumber id="440">
@@ -4014,8 +4014,8 @@
      <ru>Соли жирных кислот натрия, калия и кальция</ru>
    </name>
    <extra>
-     <en></en>
-     <ru></ru>
+     <en>Although usually obtained from plant sources, usage of animal sources cannot be fully excluded.</en>
+     <ru>Хотя обычно изготавливается из раститений, нельзя полностью исключить использование животных жиров.</ru>
    </extra>
   </enumber>
   <enumber id="470b">
@@ -4300,7 +4300,7 @@
   </enumber>
   <enumber id="484">
    <danger value="0"/>
-   <veg value="0"/>
+   <veg value="2"/>
    <child value="0"/>
    <purpose code="37"/>
    <name>
@@ -5588,7 +5588,7 @@
   </enumber>
   <enumber id="626">
    <danger value="0"/>
-   <veg value="0"/>
+   <veg value="1"/>
    <child value="0"/>
    <purpose code="66"/>
    <name>
@@ -5602,7 +5602,7 @@
   </enumber>
   <enumber id="627">
    <danger value="0"/>
-   <veg value="2"/>
+   <veg value="1"/>
    <child value="0"/>
    <purpose code="66"/>
    <name>
@@ -5616,7 +5616,7 @@
   </enumber>
   <enumber id="628">
    <danger value="0"/>
-   <veg value="0"/>
+   <veg value="1"/>
    <child value="0"/>
    <purpose code="66"/>
    <name>
@@ -5630,7 +5630,7 @@
   </enumber>
   <enumber id="629">
    <danger value="0"/>
-   <veg value="0"/>
+   <veg value="1"/>
    <child value="0"/>
    <purpose code="66"/>
    <name>
@@ -5644,7 +5644,7 @@
   </enumber>
   <enumber id="630">
    <danger value="0"/>
-   <veg value="0"/>
+   <veg value="1"/>
    <child value="0"/>
    <purpose code="66"/>
    <name>
@@ -5658,7 +5658,7 @@
   </enumber>
   <enumber id="631">
    <danger value="0"/>
-   <veg value="2"/>
+   <veg value="1"/>
    <child value="0"/>
    <purpose code="66"/>
    <name>
@@ -5672,7 +5672,7 @@
   </enumber>
   <enumber id="632">
    <danger value="0"/>
-   <veg value="0"/>
+   <veg value="1"/>
    <child value="0"/>
    <purpose code="66"/>
    <name>
@@ -5686,7 +5686,7 @@
   </enumber>
   <enumber id="633">
    <danger value="0"/>
-   <veg value="0"/>
+   <veg value="1"/>
    <child value="0"/>
    <purpose code="66"/>
    <name>
@@ -5700,7 +5700,7 @@
   </enumber>
   <enumber id="634">
    <danger value="0"/>
-   <veg value="0"/>
+   <veg value="1"/>
    <child value="0"/>
    <purpose code="66"/>
    <name>
@@ -5714,7 +5714,7 @@
   </enumber>
   <enumber id="635">
    <danger value="0"/>
-   <veg value="2"/>
+   <veg value="1"/>
    <child value="0"/>
    <purpose code="66"/>
    <name>
@@ -5728,7 +5728,7 @@
   </enumber>
   <enumber id="636">
    <danger value="0"/>
-   <veg value="0"/>
+   <veg value="2"/>
    <child value="0"/>
    <purpose code="66"/>
    <name>
@@ -5736,13 +5736,13 @@
      <ru>Мальтол</ru>
    </name>
    <extra>
-     <en></en>
-     <ru></ru>
+     <en>Should be avoided by vegans.</en>
+     <ru>Веганам следует избегать этой добавки</ru>
    </extra>
   </enumber>
   <enumber id="637">
    <danger value="0"/>
-   <veg value="0"/>
+   <veg value="2"/>
    <child value="0"/>
    <purpose code="66"/>
    <name>
@@ -5750,13 +5750,13 @@
      <ru>Этилмальтол</ru>
    </name>
    <extra>
-     <en></en>
-     <ru></ru>
+     <en>Should be avoided by vegans.</en>
+     <ru>Веганам следует избегать этой добавки</ru>
    </extra>
   </enumber>
   <enumber id="640">
    <danger value="0"/>
-   <veg value="2"/>
+   <veg value="1"/>
    <child value="0"/>
    <purpose code="66"/>
    <name>
@@ -6064,7 +6064,7 @@
   </enumber>
   <enumber id="901">
    <danger value="0"/>
-   <veg value="1"/>
+   <veg value="2"/>
    <child value="0"/>
    <purpose code="70"/>
    <name>
@@ -6072,8 +6072,8 @@
      <ru>Воск пчелиный, белый и желтый</ru>
    </name>
    <extra>
-     <en></en>
-     <ru></ru>
+     <en>Can be used by vegetarians, some vegan groups also accept this product</en>
+     <ru>Может употребляться вегетарианцами и некоторыми веганами</ru>
    </extra>
   </enumber>
   <enumber id="902">
@@ -6106,7 +6106,7 @@
   </enumber>
   <enumber id="904">
    <danger value="0"/>
-   <veg value="1"/>
+   <veg value="2"/>
    <child value="0"/>
    <purpose code="71"/>
    <name>
@@ -6114,8 +6114,8 @@
      <ru>Шеллак</ru>
    </name>
    <extra>
-     <en></en>
-     <ru></ru>
+     <en>Can be used by vegetarians. Vegans should avoid</en>
+     <ru>Может употребляться вегетарианцами, но веганы должны избегать употребления этой добавки</ru>
    </extra>
   </enumber>
   <enumber id="905">
@@ -6274,7 +6274,7 @@
   </enumber>
   <enumber id="913">
    <danger value="0"/>
-   <veg value="1"/>
+   <veg value="2"/>
    <child value="0"/>
    <purpose code="71"/>
    <name>
@@ -6282,8 +6282,8 @@
      <ru>Ланолин</ru>
    </name>
    <extra>
-     <en></en>
-     <ru></ru>
+     <en>Can be used by vegetarians. Vegans should avoid</en>
+     <ru>Может употребляться вегетарианцами, но веганы должны избегать употребления этой добавки</ru>
    </extra>
   </enumber>
   <enumber id="914">
@@ -6372,7 +6372,7 @@
   </enumber>
   <enumber id="920">
    <danger value="0"/>
-   <veg value="2"/>
+   <veg value="1"/>
    <child value="0"/>
    <purpose code="75"/>
    <name>
@@ -6386,7 +6386,7 @@
   </enumber>
   <enumber id="921">
    <danger value="0"/>
-   <veg value="0"/>
+   <veg value="1"/>
    <child value="0"/>
    <purpose code="75"/>
    <name>
@@ -6926,8 +6926,8 @@
      <ru>Лактит</ru>
    </name>
    <extra>
-     <en></en>
-     <ru></ru>
+     <en>Can be used by vegetarians, but not by vegans, as the source is milk sugar</en>
+     <ru>Может употребляться вегетарианцами, но не веганами</ru>
    </extra>
   </enumber>
   <enumber id="967">
@@ -6974,7 +6974,7 @@
   </enumber>
   <enumber id="1000">
    <danger value="0"/>
-   <veg value="0"/>
+   <veg value="1"/>
    <child value="0"/>
    <purpose code="37"/>
    <name>
@@ -7080,8 +7080,8 @@
      <ru>Лизоцим</ru>
    </name>
    <extra>
-     <en></en>
-     <ru></ru>
+     <en>Should be avoided by vegans</en>
+     <ru>Веганам следует избегать употребления этой добавки</ru>
    </extra>
   </enumber>
   <enumber id="1200">

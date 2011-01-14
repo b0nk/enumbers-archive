@@ -12,7 +12,7 @@ Format of data file:
 6. Vegan stuff:
 		0 - safe
 		1 - Animal sources
-		2 - Can have both animal and plan sources. Avoid if unsure
+		2 - Can have both animal and plant sources. Avoid if unsure
 7. Children
 		0 - safe
 		1	- cause ADHD
