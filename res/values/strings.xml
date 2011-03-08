@@ -13,6 +13,8 @@
 
 <string name="doSearch">Search</string>
 <string name="searchHint">Type E number to search</string>
+<string name="searchableHint">Search for E number</string>
+<string name="searchDesc">E numbers and names of additives"</string>
 <string name="permitted">Usually safe, no known side effects.</string>
 <string name="unpermitted">May cause adverse effects, not permitted in EU, additional tests may be ongoing. Avoid it.</string>
 <string name="dangerous">Proven to cause severe adverse effects, may be dangerouse to people with chronic deceases.</string>

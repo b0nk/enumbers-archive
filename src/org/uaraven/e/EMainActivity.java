@@ -12,6 +12,7 @@ import java.util.LinkedList;
 import java.util.List;
 
 import android.app.ListActivity;
+import android.app.SearchManager;
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
@@ -63,6 +64,12 @@ public class EMainActivity extends ListActivity implements TextWatcher {
 			}
 		});
 
+		if (Intent.ACTION_SEARCH.equals(getIntent().getAction())) {
+		    searchText.setVisibility(View.GONE);
+		    String query = getIntent().getStringExtra(SearchManager.QUERY);
+		    searchForECodes(query);
+		}
+		
 		//installAdView();
 	}
 
@@ -83,8 +90,11 @@ public class EMainActivity extends ListActivity implements TextWatcher {
 	}
 	
 	private void searchForECodes() {
-		String text = searchText.getText().toString().trim();
-		//String[] codes = text.split(" ");
+	    String text = searchText.getText().toString().trim();
+	    searchForECodes(text);
+	}
+	
+	private void searchForECodes(String text) {
 		String[] codes = createCodeList(text);
 
 		allECodes.filter(codes, selectedECodes);

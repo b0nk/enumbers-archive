@@ -12,6 +12,8 @@
 
 <string name="doSearch">Искать</string>
 <string name="searchHint">Поиск Е-кода</string>
+<string name="searchableHint">Искать Е-код</string>
+<string name="searchDesc">E-коды и названия добавок"</string>
 <string name="permitted">Безопасная добавка, нет известных побочных эффектов.</string>
 <string name="unpermitted">Может вызывать побочные эффекты, не разрешена в ЕС, тестирование может быть еще не завершено. Избегайте.</string>
 <string name="mostly_safe">Обычно безопасная добавка, может вызывать побочные эффекты у некоторых людей, смотрите дополнительную информацию.</string>
