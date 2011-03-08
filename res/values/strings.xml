@@ -10,6 +10,7 @@
 <resources>
     
     <string name="app_name">E numbers</string>
+    <string name="provider_name">ENumbers</string>
 
 <string name="doSearch">Search</string>
 <string name="searchHint">Type E number to search</string>

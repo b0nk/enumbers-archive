@@ -4,5 +4,7 @@
   android:label="@string/app_name"
   android:hint="@string/searchHint"
   android:includeInGlobalSearch="true"
-  android:searchSettingsDescription="@string/searchDesc">
+  android:searchSettingsDescription="@string/searchDesc"
+  android:searchSuggestAuthority="org.uaraven.e.suggestions"
+  android:searchSuggestIntentAction="org.uaraven.e.VIEW_ECODE">
 </searchable>

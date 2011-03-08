@@ -29,7 +29,6 @@ public class EMainActivity extends ListActivity implements TextWatcher {
 	private static final int MENU_HELP = 1;
 
 	private EditText searchText;
-	private ECodeList allECodes;
 	private ECodeList selectedECodes;
 	private ECodeAdapter adapter;
 	
@@ -47,11 +46,17 @@ public class EMainActivity extends ListActivity implements TextWatcher {
 
 		searchText.addTextChangedListener(this);
 
-		allECodes = new ECodeList();
-		allECodes.load(this);
+		GlobalCodeList.init(this);
+		
+		if (Consts.ACTION_VIEW_E_CODE.equals(getIntent().getAction())) {
+		    Intent i = new Intent(this, ECodeViewActivity.class);
+		    i.putExtra(SearchManager.EXTRA_DATA_KEY, getIntent().getStringExtra(SearchManager.EXTRA_DATA_KEY));
+		    startActivity(i);
+		    finish();
+		}
 
 		selectedECodes = new ECodeList();
-		selectedECodes.addAll(allECodes);
+		selectedECodes.addAll(GlobalCodeList.getInstance());
 
 		adapter = new ECodeAdapter(this, selectedECodes);
 		this.setListAdapter(adapter);
@@ -63,7 +68,7 @@ public class EMainActivity extends ListActivity implements TextWatcher {
 				return true;
 			}
 		});
-
+		
 		if (Intent.ACTION_SEARCH.equals(getIntent().getAction())) {
 		    searchText.setVisibility(View.GONE);
 		    String query = getIntent().getStringExtra(SearchManager.QUERY);
@@ -82,7 +87,7 @@ public class EMainActivity extends ListActivity implements TextWatcher {
 				result.add(token);
 			} catch (NumberFormatException e) {
 				// not integer
-				result.addAll(allECodes.textSearch(token));
+				result.addAll(GlobalCodeList.getInstance().textSearch(token));
 			}
 		}
 		String[] resarray = new String[result.size()];
@@ -97,7 +102,7 @@ public class EMainActivity extends ListActivity implements TextWatcher {
 	private void searchForECodes(String text) {
 		String[] codes = createCodeList(text);
 
-		allECodes.filter(codes, selectedECodes);
+		GlobalCodeList.getInstance().filter(codes, selectedECodes);
 	}
 
 	@Override

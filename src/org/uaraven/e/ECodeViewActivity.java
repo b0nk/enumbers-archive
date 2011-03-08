@@ -9,12 +9,14 @@
 package org.uaraven.e;
 
 import android.app.Activity;
+import android.app.SearchManager;
 import android.os.Bundle;
 import android.view.View;
 import android.view.Window;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class ECodeViewActivity extends Activity {
 	
@@ -44,7 +46,18 @@ public class ECodeViewActivity extends Activity {
 		LinearLayout layChild = (LinearLayout) findViewById(R.id.layChild);
 		LinearLayout layAller = (LinearLayout) findViewById(R.id.layAller);*/
 
-		ECode code = this.getIntent().getParcelableExtra("ecode");
+		Bundle extras = getIntent().getExtras();
+		ECode code = null;
+		if (extras.containsKey(SearchManager.EXTRA_DATA_KEY)) {
+		    code = GlobalCodeList.getInstance().find(extras.getString(SearchManager.EXTRA_DATA_KEY));
+		} else {
+		    code = this.getIntent().getParcelableExtra("ecode");
+		}
+		if (code == null) {
+		    Toast.makeText(this, "Fock", Toast.LENGTH_SHORT).show();
+		    finish();
+            return;		    
+		}
 		tvCode.setBackgroundColor(code.getColor());
 		tvCode.setText("E" + code.eCode);
 		tvName.setText(code.name);
