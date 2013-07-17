@@ -18,9 +18,7 @@ public final class ECode implements Comparable<ECode>, Parcelable {
     public static final int MOSTLY_SAFE = 2; // Usually safe !!! Value changed!
     public static final int DANGEROUS = 3; // DANGEROUS, AVOID AT ALL COST
 
-    public static final int[] colors = {0xFF75D175, 0xFFFFFF3D, /*0xFFFF6600,*/
-            0xFFBFD175,
-            0xFFFF001A, 0xFFCCCCCC};
+    public static final int[] colors = {0xFF75D175, 0xFFFFFF3D, 0xFFBFD175, 0xFFFF001A, 0xFFCCCCCC};
 
     public String eCode;
     public String name;

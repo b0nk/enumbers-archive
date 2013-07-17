@@ -8,7 +8,6 @@
 
 package org.uaraven.e;
 
-import android.app.ActionBar;
 import android.app.SearchManager;
 import android.content.Intent;
 import android.os.Bundle;
@@ -20,6 +19,7 @@ import android.text.TextWatcher;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.ListView;
+import com.actionbarsherlock.app.ActionBar;
 import com.actionbarsherlock.app.SherlockListActivity;
 
 import java.util.HashSet;
@@ -44,7 +44,7 @@ public class EMainActivity extends SherlockListActivity implements TextWatcher {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.main);
 
-        ActionBar actionBar = getActionBar();
+        ActionBar actionBar = getSupportActionBar();
         actionBar.setDisplayShowCustomEnabled(true);
         actionBar.setCustomView(R.layout.search_view);
         searchText = (EditText) actionBar.getCustomView().findViewById(R.id.text_search);

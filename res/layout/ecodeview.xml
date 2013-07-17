@@ -10,17 +10,33 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
               android:layout_width="fill_parent" android:layout_height="fill_parent"
               android:orientation="vertical" android:id="@+id/viewmain">
-    <TextView android:text="@+id/TextView01" android:id="@+id/textCode"
-              android:layout_width="fill_parent" android:textColor="#000000"
-              android:textStyle="bold" android:textSize="20sp"
-              android:layout_gravity="center" android:gravity="center"
-              android:layout_height="30sp"></TextView>
-    <TextView android:layout_width="wrap_content"
-              android:layout_height="wrap_content" android:id="@+id/textName"
-              android:text="Caption" android:textStyle="bold"></TextView>
-    <TextView android:layout_width="wrap_content"
-              android:layout_height="wrap_content" android:id="@+id/textPurpose"
-              android:text="Purpose" android:layout_marginTop="3sp"></TextView>
+    <LinearLayout android:layout_width="match_parent"
+                  android:layout_height="wrap_content">
+        <View android:id="@+id/color_band"
+              android:layout_width="16dp"
+              android:layout_height="match_parent"
+              android:layout_weight="0"
+              android:paddingRight="4dp"/>
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:padding="4dp">
+            <TextView android:id="@+id/ecode"
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:textStyle="bold"
+                      android:textAppearance="@android:style/TextAppearance.Large"/>
+            <TextView android:layout_width="wrap_content"
+                      android:layout_height="wrap_content" android:id="@+id/textName"
+                      android:textAppearance="@android:style/TextAppearance.Medium"/>
+            <TextView android:layout_width="wrap_content"
+                      android:layout_height="wrap_content" android:id="@+id/textPurpose"/>
+        </LinearLayout>
+    </LinearLayout>
+
+
     <LinearLayout android:id="@+id/layExtra"
                   android:layout_width="wrap_content" android:layout_height="wrap_content"
                   android:layout_marginTop="6sp">
@@ -41,10 +57,10 @@
         <LinearLayout android:id="@+id/LinearLayout02"
                       android:layout_width="wrap_content" android:layout_height="wrap_content">
             <ImageView android:id="@+id/img_v" android:layout_width="wrap_content"
-                       android:layout_height="wrap_content" android:src="@drawable/vegan"></ImageView>
+                       android:layout_height="wrap_content" android:src="@drawable/vegan"/>
         </LinearLayout>
         <TextView android:id="@+id/tv_v" android:layout_width="wrap_content"
-                  android:layout_height="wrap_content" android:text="@string/vegan2"></TextView>
+                  android:layout_height="wrap_content" android:text="@string/vegan2"/>
     </LinearLayout>
     <LinearLayout android:layout_height="wrap_content"
                   android:orientation="horizontal" android:layout_width="fill_parent"
@@ -53,10 +69,10 @@
         <LinearLayout android:id="@+id/LinearLayout02"
                       android:layout_width="wrap_content" android:layout_height="wrap_content">
             <ImageView android:id="@+id/img_ch" android:layout_width="wrap_content"
-                       android:layout_height="wrap_content" android:src="@drawable/child"></ImageView>
+                       android:layout_height="wrap_content" android:src="@drawable/child"/>
         </LinearLayout>
         <TextView android:id="@+id/tv_ch" android:layout_width="wrap_content"
-                  android:layout_height="wrap_content" android:text="@string/child2"></TextView>
+                  android:layout_height="wrap_content" android:text="@string/child2"/>
     </LinearLayout>
     <LinearLayout android:layout_height="wrap_content"
                   android:orientation="horizontal" android:layout_width="fill_parent"

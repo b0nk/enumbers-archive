@@ -8,25 +8,25 @@
 
 package org.uaraven.e;
 
-import android.app.Activity;
 import android.app.SearchManager;
 import android.os.Bundle;
 import android.view.View;
-import android.view.Window;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
+import com.actionbarsherlock.app.SherlockActivity;
+import com.actionbarsherlock.view.MenuItem;
 
-public class ECodeViewActivity extends Activity {
+public class ECodeViewActivity extends SherlockActivity {
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        requestWindowFeature(Window.FEATURE_NO_TITLE);
         setContentView(R.layout.ecodeview);
 
-        TextView tvCode = (TextView) findViewById(R.id.textCode);
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+
         TextView tvName = (TextView) findViewById(R.id.textName);
         TextView tvPurpose = (TextView) findViewById(R.id.textPurpose);
         TextView tvExtra = (TextView) findViewById(R.id.textExtra);
@@ -53,8 +53,13 @@ public class ECodeViewActivity extends Activity {
             finish();
             return;
         }
-        tvCode.setBackgroundColor(code.getColor());
-        tvCode.setText("E" + code.eCode);
+
+
+        TextView eCode = (TextView) findViewById(R.id.ecode);
+        eCode.setText("E" + code.eCode);
+        View colorBand = findViewById(R.id.color_band);
+        colorBand.setBackgroundColor(code.getColor());
+
         tvName.setText(code.name);
         tvPurpose.setText(code.purpose);
         tvExtra.setText(code.comment);
@@ -73,4 +78,17 @@ public class ECodeViewActivity extends Activity {
 
     }
 
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch (item.getItemId()) {
+            case android.R.id.home:
+//                Intent intent = new Intent(this, EMainActivity.class);
+//                intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+//                startActivity(intent);
+                finish();
+                return true;
+            default:
+                return super.onOptionsItemSelected(item);
+        }
+    }
 }

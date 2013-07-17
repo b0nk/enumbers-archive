@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+ This file is distributed under GPL v3 license 
+ http://www.gnu.org/licenses/gpl-3.0.html      
+
+ (c) 2012 Laura Arjona Reina - larjona99@gmail.com                        
+-->
+
+
+<resources>
+
+    <string name="app_name">E numbers</string>
+    <string name="provider_name">ENumbers</string>
+
+    <string name="doSearch">Búsqueda</string>
+    <string name="searchHint">Teclee número E para buscar</string>
+    <string name="searchableHint">Buscar por número E</string>
+    <string name="searchDesc">Números E y nombres de aditivos"</string>
+    <string name="permitted">Normalmente seguro, no se conocen efectos secundarios.</string>
+    <string name="unpermitted">Puede causar efectos adversos, no permitido en la UE, puede que se estén realizando
+        pruebas adicionales. Evítelo.
+    </string>
+    <string name="dangerous">Está probado que cause efectos adversos severos, puede ser peligroso para personas con
+        enfermedades crónicas.
+    </string>
+    <string name="mostly_safe">Seguro en la mayoría de los casos, pero puede causar efectos secundarios en algunas
+        personas, compruebe info adicional.
+    </string>
+    <string name="extra">Existe información adicional, haga clic an el aditivo para ver los detalles.</string>
+    <string name="unknown">Desconocido - no hay información sobre los permisos.</string>
+    <string name="menu_help">Ayuda</string>
+    <string name="HelpCaption">Esta aplicación es una referencia para aditivos alimientarios, también conocidos como<b>
+        números E</b>. Para cada número E se muestra la siguiente información: nombre, propósito y "estado" de salud.
+    </string>
+    <string name="HelpCaption2">Abajo hay un pequeño resumen para cada "estado".</string>
+    <string name="vegan">La imagen de la hoja muestra si un aditivo es adecuado para vegetarianos</string>
+    <string name="child">La imagen del niño muestra si un aditivo es seguro o peligroso para los niños</string>
+    <string name="allerg">La imagen de la mano muestra si el aditivo es adecuado para alérgicos</string>
+    <string name="color_hint">El color de la imagen cambia de verde a rojo, según la adecuidad del aditivo.</string>
+    <string name="cap_permitted">Seguro</string>
+    <string name="cap_unpermitted">Evitar</string>
+    <string name="cap_forbidden">Seguro en la mayor parte de los casos</string>
+    <string name="cap_dangerous">Peligroso</string>
+    <string name="cap_unknown">Desconocido</string>
+
+    <string name="note">Por favor, compruebe siempre información adicional, si existe. Algunos aditivos pueden ser
+        generalmente seguros y permitidos, pero causar efectos adversos en una minoría de la población, sin embargo ¡
+        <b>usted</b>
+        puede estar en esa minoría!
+    </string>
+
+    <string name="vegan2">Este aditivo es adecuado para vegetarianos</string>
+    <string name="child2">Este aditivo es seguro para los niños</string>
+    <string name="allerg2">Este aditivo es seguro para los alérgicos</string>
+
+    <string name="v1">Este aditivo tiene procedencia animal.</string>
+    <string name="v2">Este aditivo puede tener procedencia animal o vegetal, evítelo si no está seguro.</string>
+
+    <string name="c1">Este aditivo es sospechoso de causar TDAH.</string>
+    <string name="c2">Este aditivo no es recomendable para niños.</string>
+
+    <string name="a1">Este aditivo puede provocar reacciones alérgicas.</string>
+
+</resources>
+
