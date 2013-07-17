@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="ENumbersBaseTheme" parent="android:Theme.Light">
+
+    </style>
+
+    <style name="ENumbersTheme" parent="ENumbersBaseTheme">
+
+    </style>
+</resources>

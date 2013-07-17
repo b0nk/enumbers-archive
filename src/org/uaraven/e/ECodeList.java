@@ -7,28 +7,23 @@
 
 package org.uaraven.e;
 
-import java.io.InputStream;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Collection;
-import java.util.HashSet;
-import java.util.LinkedList;
-import java.util.List;
-import java.util.Set;
-
-import javax.xml.parsers.SAXParser;
-import javax.xml.parsers.SAXParserFactory;
-
-import android.app.SearchManager;
 import android.content.Context;
 import android.content.res.AssetManager;
-import android.database.Cursor;
-import android.database.MatrixCursor;
-import android.provider.BaseColumns;
+import android.util.Log;
+import org.xml.sax.SAXException;
+
+import javax.xml.parsers.ParserConfigurationException;
+import javax.xml.parsers.SAXParser;
+import javax.xml.parsers.SAXParserFactory;
+import java.io.IOException;
+import java.io.InputStream;
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.LinkedList;
+import java.util.List;
 
 public class ECodeList extends ArrayList<ECode> {
     private static final long serialVersionUID = 1L;
-    private ECodeListObserver observer = null;
 
     public ECodeList() {
     }
@@ -39,54 +34,49 @@ public class ECodeList extends ArrayList<ECode> {
         try {
             AssetManager mgr = ctx.getAssets();
             is = mgr.open("e.xml");
+            loadFromStream(is);
         } catch (Exception e) {
-            onChanged();
-            return;
+            Log.e("E", "Failed to load data", e);
+        } finally {
+            if (is != null) {
+                try {
+                    is.close();
+                } catch (IOException ignored) {
+                }
+            }
         }
-        loadFromStream(is);
     }
 
-    private void onChanged() {
-        if (observer != null) {
-            observer.dataChanged();
-        }
-    }
-
-    private void loadFromStream(InputStream is) {
+    private void loadFromStream(InputStream is) throws ParserConfigurationException, SAXException, IOException {
         SAXParserFactory factory = SAXParserFactory.newInstance();
-        try {
-            SAXParser parser = factory.newSAXParser();
-            parser.parse(is, new ECodeHandler(this));
-            onChanged();
-        } catch (Exception ex) {
-            ex.printStackTrace();
-        }
+        SAXParser parser = factory.newSAXParser();
+        parser.parse(is, new ECodeHandler(this));
     }
 
     public ECode find(String code) {
         final String lcode = code.toLowerCase();
-        for (ECode ecode: this) {
+        for (ECode ecode : this) {
             if (ecode.eCode.contains(code)) {
                 return ecode;
             }
             if (ecode.name != null) {
-                if (ecode.name.toLowerCase().indexOf(lcode) >= 0)
+                if (ecode.name.toLowerCase().contains(lcode))
                     return ecode;
             }
         }
         return null;
     }
 
-    public void filter(Collection<String> codes, ECodeList selectedECodes) {
-        selectedECodes.clear();
-        for (ECode code: this) {
-            for (String token: codes)
+    public ECodeList filter(Collection<String> codes) {
+        ECodeList result = new ECodeList();
+        for (ECode code : this) {
+            for (String token : codes)
                 if (code.eCode.contains(token)) {
-                    selectedECodes.add(code);
+                    result.add(code);
                     break;
                 }
         }
-        selectedECodes.onChanged();
+        return result;
     }
 
     public List<String> textSearch(String text) {
@@ -97,60 +87,10 @@ public class ECodeList extends ArrayList<ECode> {
              * code.name.toLowerCase()); if (d <= 2) result.add(code.eCode);
              */
             if (text != null && code != null && code.name != null)
-                if (code.name.toLowerCase().indexOf(text.toLowerCase()) >= 0)
+                if (code.name.toLowerCase().contains(text.toLowerCase()))
                     result.add(code.eCode);
         }
         return result;
     }
 
-    public void setObserver(ECodeListObserver observer) {
-        this.observer = observer;
-    }
-
-    public void reportChange() {
-        onChanged();
-    }
-    
-    public ECodeList filterList(String codesOrTexts) {
-        Set<String> codeIds = new HashSet<String>(20);
-        String[] tokens = codesOrTexts.split("[\\ ,]");
-        for (String token: tokens) {
-            try {
-                Integer.parseInt(token);
-                codeIds.add(token);
-            } catch (NumberFormatException e) {
-                // not integer
-                codeIds.addAll(GlobalCodeList.getInstance().textSearch(token));
-            }
-        }
-        ECodeList result = new ECodeList();
-        filter(codeIds, result);
-        return result;
-    }
-    
-    public Cursor getSearchCursor(String query) {
-        ECodeList codes = filterList(query);
-        MatrixCursor c = new MatrixCursor(new String[] {
-                        BaseColumns._ID,
-                        SearchManager.SUGGEST_COLUMN_TEXT_1,
-                        SearchManager.SUGGEST_COLUMN_TEXT_2,
-                        SearchManager.SUGGEST_COLUMN_INTENT_EXTRA_DATA
-        });
-        final int len = codes.size();
-        for (int i = 0; i < len; i++) {
-            ECode code = codes.get(i);
-            c.addRow(new Object[] {
-               new Integer(i+1),
-               "E" + code.eCode,
-               code.name,
-               code.eCode
-            });
-        }
-        return c;
-    }
-
-    public void filter(String[] codes, ECodeList selectedECodes) {
-        List<String> lcodes = Arrays.asList(codes);
-        filter(lcodes, selectedECodes);
-    }
 }
