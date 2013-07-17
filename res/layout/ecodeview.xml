@@ -86,7 +86,15 @@
                   android:layout_height="wrap_content" android:text="@string/allerg2"></TextView>
     </LinearLayout>
     <LinearLayout android:id="@+id/ads_layout"
-                  android:layout_height="fill_parent" android:orientation="vertical"
-                  android:layout_width="fill_parent" android:gravity="bottom">
+                  android:layout_height="fill_parent"
+                  android:orientation="vertical"
+                  android:layout_width="fill_parent"
+                  android:gravity="bottom"
+                  style="@style/ButtonBar">
+        <Button android:id="@+id/close_btn"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/close"
+                style="@style/DialogButton"/>
     </LinearLayout>
 </LinearLayout>

@@ -1,10 +1,29 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <style name="ENumbersBaseTheme" parent="android:Theme.Light">
+    <style name="ENumbersBaseTheme" parent="Theme.Sherlock.Light">
 
     </style>
 
     <style name="ENumbersTheme" parent="ENumbersBaseTheme">
-
     </style>
+
+    <style name="ENumbersBaseDialogTheme" parent="android:Theme.Dialog">
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+    <style name="ENumbersDialogTheme" parent="ENumbersBaseDialogTheme">
+    </style>
+
+    <style name="BaseButtonBar" parent="android:ButtonBar">
+    </style>
+
+    <style name="ButtonBar" parent="BaseButtonBar">
+    </style>
+
+    <style name="BaseDialogButton" parent="android:Widget.Button">
+    </style>
+
+    <style name="DialogButton" parent="BaseDialogButton">
+    </style>
+
 </resources>

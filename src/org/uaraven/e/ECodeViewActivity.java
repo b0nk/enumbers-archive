@@ -8,24 +8,20 @@
 
 package org.uaraven.e;
 
+import android.app.Activity;
 import android.app.SearchManager;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.ImageView;
-import android.widget.LinearLayout;
-import android.widget.TextView;
-import android.widget.Toast;
-import com.actionbarsherlock.app.SherlockActivity;
-import com.actionbarsherlock.view.MenuItem;
+import android.widget.*;
 
-public class ECodeViewActivity extends SherlockActivity {
+public class ECodeViewActivity extends Activity {
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.ecodeview);
 
-        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+//        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
         TextView tvName = (TextView) findViewById(R.id.textName);
         TextView tvPurpose = (TextView) findViewById(R.id.textPurpose);
@@ -76,19 +72,28 @@ public class ECodeViewActivity extends SherlockActivity {
                 (code.children == 1 ? R.string.c1 : R.string.c2));
         tvAller.setText(code.allergic ? R.string.a1 : R.string.allerg2);
 
-    }
 
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        switch (item.getItemId()) {
-            case android.R.id.home:
-//                Intent intent = new Intent(this, EMainActivity.class);
-//                intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-//                startActivity(intent);
+        Button close = (Button) findViewById(R.id.close_btn);
+        close.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
                 finish();
-                return true;
-            default:
-                return super.onOptionsItemSelected(item);
-        }
+            }
+        });
+
     }
+//
+//    @Override
+//    public boolean onOptionsItemSelected(MenuItem item) {
+//        switch (item.getItemId()) {
+//            case android.R.id.home:
+////                Intent intent = new Intent(this, EMainActivity.class);
+////                intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+////                startActivity(intent);
+//                finish();
+//                return true;
+//            default:
+//                return super.onOptionsItemSelected(item);
+//        }
+//    }
 }

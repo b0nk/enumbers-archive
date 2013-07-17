@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <style name="ENumbersBaseTheme" parent="android:Theme.Holo.Light">
-
-    </style>
+    <style name="ENumbersBaseTheme" parent="android:Theme.Holo.Light"/>
+    <style name="ENumbersBaseDialogTheme" parent="android:Theme.Holo.Light.Dialog.NoActionBar"/>
+    <style name="BaseButtonBar" parent="android:Holo.Light.ButtonBar"/>
+    <style name="BaseDialogButton" parent="android:Widget.Holo.Light.Button.Borderless.Small"/>
 </resources>
