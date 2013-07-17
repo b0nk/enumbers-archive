@@ -63,7 +63,9 @@ public class ECodeAdapter extends BaseAdapter implements HolderCreator<ECode> {
 
     private static final class CodeDataHolder extends UiHolder<ECode> {
 
-        private final View band;
+        private static final int DIMMER = 2;
+
+        private final TextView band;
         private final TextView codeId;
         private final TextView codeName;
         private final TextView codePurpose;
@@ -74,7 +76,7 @@ public class ECodeAdapter extends BaseAdapter implements HolderCreator<ECode> {
         private CodeDataHolder(View view) {
             super(view);
 
-            band = view.findViewById(R.id.color_band);
+            band = (TextView) view.findViewById(R.id.color_band);
             codeId = (TextView) view.findViewById(R.id.ecode);
             codeName = (TextView) view.findViewById(R.id.name);
             codePurpose = (TextView) view.findViewById(R.id.purpose);
@@ -91,9 +93,10 @@ public class ECodeAdapter extends BaseAdapter implements HolderCreator<ECode> {
             codePurpose.setText(eCode.purpose);
 
             if (eCode.hasExtra()) {
-                codeId.setBackgroundColor(0xFFF0F0FF);
+                band.setText("!");
+                band.setTextColor(dimmed(eCode.getColor()));
             } else {
-                codeId.setBackgroundColor(android.R.color.background_light);
+                band.setText("");
             }
 
             imageVegan.setImageResource(eCode.vegan == 0 ? R.drawable.veg_green_small : (eCode.vegan == 2 ? R.drawable.veg_yellow_small : R.drawable.veg_red_small));
@@ -101,6 +104,14 @@ public class ECodeAdapter extends BaseAdapter implements HolderCreator<ECode> {
             imageAllergy.setImageResource(eCode.allergic ? R.drawable.allergic_red_small : R.drawable.allergic_green_small);
 
             return view;
+        }
+
+        private static int dimmed(int color) {
+            int r = (color >> 16) & 0xFF / DIMMER;
+            int g = (color >> 8) & 0xFF / DIMMER;
+            int b = color & 0xFF / DIMMER;
+
+            return (0x8F << 24) + (r << 16) + (g << 8) + b;
         }
 
 
