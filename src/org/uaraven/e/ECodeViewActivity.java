@@ -65,10 +65,10 @@ public class ECodeViewActivity extends SherlockActivity {
         tvExtra.setText(code.comment);
 
         layExtra.setVisibility(code.hasExtra() ? View.VISIBLE : View.GONE);
-        imVegan.setImageResource(code.vegan == 0 ? R.drawable.vegan :
-                (code.vegan == 2 ? R.drawable.vegan_y : R.drawable.vegan_r));
-        imChild.setImageResource(code.children == 0 ? R.drawable.child : R.drawable.child_r);
-        imAller.setImageResource(code.allergic ? R.drawable.allergic_r : R.drawable.allergic);
+        imVegan.setImageResource(code.vegan == 0 ? R.drawable.veg_green :
+                (code.vegan == 2 ? R.drawable.veg_yellow : R.drawable.veg_red));
+        imChild.setImageResource(code.children == 0 ? R.drawable.child_green : R.drawable.child_red);
+        imAller.setImageResource(code.allergic ? R.drawable.allergic_red : R.drawable.allergic_green);
 
         tvVegan.setText(code.vegan == 0 ? R.string.vegan2 :
                 (code.vegan == 2 ? R.string.v2 : R.string.v1));

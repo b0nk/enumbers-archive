@@ -1,0 +1,3 @@
+red: cb2d0eff
+green: 39c217ff
+yellow: ece419ff

@@ -96,9 +96,9 @@ public class ECodeAdapter extends BaseAdapter implements HolderCreator<ECode> {
                 codeId.setBackgroundColor(android.R.color.background_light);
             }
 
-            imageVegan.setImageResource(eCode.vegan == 0 ? R.drawable.v : (eCode.vegan == 2 ? R.drawable.v_y : R.drawable.v_r));
-            imageChild.setImageResource(eCode.children == 0 ? R.drawable.ch : R.drawable.ch_r);
-            imageAllergy.setImageResource(eCode.allergic ? R.drawable.al_r : R.drawable.al);
+            imageVegan.setImageResource(eCode.vegan == 0 ? R.drawable.veg_green_small : (eCode.vegan == 2 ? R.drawable.veg_yellow_small : R.drawable.veg_red_small));
+            imageChild.setImageResource(eCode.children == 0 ? R.drawable.child_green_small : R.drawable.child_red_small);
+            imageAllergy.setImageResource(eCode.allergic ? R.drawable.allergic_red_small : R.drawable.allergic_green_small);
 
             return view;
         }
