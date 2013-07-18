@@ -42,6 +42,7 @@ public class EMainActivity extends SherlockListActivity implements TextWatcher {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        setTheme(R.style.ENumbersTheme);
         setContentView(R.layout.main);
 
         ActionBar actionBar = getSupportActionBar();
