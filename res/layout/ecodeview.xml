@@ -9,7 +9,8 @@
 
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
               android:layout_width="fill_parent" android:layout_height="fill_parent"
-              android:orientation="vertical" android:id="@+id/viewmain">
+              android:orientation="vertical" android:id="@+id/viewmain"
+              android:minWidth="240dp">
     <LinearLayout android:layout_width="match_parent"
                   android:layout_height="wrap_content">
         <View android:id="@+id/color_band"
@@ -39,7 +40,7 @@
 
     <LinearLayout android:id="@+id/layExtra"
                   android:layout_width="wrap_content" android:layout_height="wrap_content"
-                  android:layout_marginTop="6dp">
+                  android:padding="4dp">
         <ImageView android:layout_width="50dp" android:layout_height="50dp"
                    android:src="@drawable/info" android:padding="4dp"></ImageView>
 
@@ -52,7 +53,7 @@
     <LinearLayout android:layout_height="wrap_content"
                   android:orientation="horizontal" android:layout_width="fill_parent"
                   android:layout_gravity="center" android:id="@+id/layVegan"
-                  android:layout_marginTop="6dp">
+                  android:padding="4dp">
         <LinearLayout android:id="@+id/LinearLayout02"
                       android:layout_width="wrap_content" android:layout_height="wrap_content">
             <ImageView android:id="@+id/img_v" android:layout_width="50dp"
@@ -64,7 +65,7 @@
     <LinearLayout android:layout_height="wrap_content"
                   android:orientation="horizontal" android:layout_width="fill_parent"
                   android:layout_gravity="center" android:id="@+id/layChild"
-                  android:layout_marginTop="6dp">
+                  android:padding="4dp">
         <LinearLayout android:id="@+id/LinearLayout02"
                       android:layout_width="wrap_content" android:layout_height="wrap_content">
             <ImageView android:id="@+id/img_ch" android:layout_width="50dp"
@@ -76,7 +77,7 @@
     <LinearLayout android:layout_height="wrap_content"
                   android:orientation="horizontal" android:layout_width="fill_parent"
                   android:layout_gravity="center" android:id="@+id/layAller"
-                  android:layout_marginTop="6sp">
+                  android:padding="4dp">
         <LinearLayout android:id="@+id/LinearLayout02"
                       android:layout_width="wrap_content" android:layout_height="wrap_content">
             <ImageView android:id="@+id/img_al" android:layout_width="50dp"
@@ -86,9 +87,9 @@
                   android:layout_height="wrap_content" android:text="@string/allerg2"></TextView>
     </LinearLayout>
     <LinearLayout android:id="@+id/ads_layout"
-                  android:layout_height="fill_parent"
+                  android:layout_height="match_parent"
                   android:orientation="vertical"
-                  android:layout_width="fill_parent"
+                  android:layout_width="match_parent"
                   android:gravity="bottom"
                   style="@style/ButtonBar">
         <Button android:id="@+id/close_btn"
